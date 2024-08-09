@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F","\u002Fbottle","\u002Flgblock","\u002Fparticle-effect-gallery","\u002Fparticle-gallery","\u002Fposts\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
