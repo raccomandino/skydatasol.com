@@ -71,7 +71,7 @@ window.onload = function() {
     // Insert a div with content before all paragraphs with class 'example-class'
 
         insertDiv('section.ProjectHero__ProjectHeroSection-sc-1g1pu7g-0.ehifeV', 
-        '<video class="hero-video" autoplay="" muted="" loop="" playsinline="" src="http://127.0.0.1:5500/video/Bf225053-71C3-47A8-867A-E57c6b4fc601-7.m4v" style="width: 100vw; height: 100vh; object-fit: cover; position: absolute; top: 0px; left: 0px;">Your browser does not support the video tag.</video>', 
+        '<video class="hero-video" autoplay="" muted="" loop="" playsinline="" src="http://skydatasol.com/video/Bf225053-71C3-47A8-867A-E57c6b4fc601-7.m4v" style="width: 100vw; height: 100vh; object-fit: cover; position: absolute; top: 0px; left: 0px;">Your browser does not support the video tag.</video>', 
         'before', 
         'hero-video');
 
