@@ -22,11 +22,6 @@ style.innerHTML = `
       --animation-duration: 1s; /* Duration of the spinning animation */
   }
 
-  /* Disable overflow during loading */
-  body {
-      overflow: hidden;
-  }
-
   /* Preloader styles */
   #preloader {
       position: fixed;
