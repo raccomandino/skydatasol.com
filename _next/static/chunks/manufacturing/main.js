@@ -1,3 +1,77 @@
+// Create the preloader elements
+const preloader = document.createElement('div');
+const loader = document.createElement('div');
+
+// Set IDs and classes
+preloader.id = 'preloader';
+loader.className = 'loader';
+
+// Append loader to preloader and preloader to body
+preloader.appendChild(loader);
+document.body.appendChild(preloader);
+
+// Add CSS styles for preloader and loader
+const style = document.createElement('style');
+style.innerHTML = `
+  /* Define CSS variables */
+  :root {
+      --preloader-bg: #000; /* Black background */
+      --loader-color: #fff; /* White color for the loader */
+      --loader-border-width: 4px; /* Thickness of the loader ring */
+      --loader-size: 60px; /* Size of the loader */
+      --animation-duration: 1s; /* Duration of the spinning animation */
+  }
+
+  /* Disable overflow during loading */
+  body {
+      overflow: hidden;
+  }
+
+  /* Preloader styles */
+  #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--preloader-bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+  }
+
+  /* Loader animation */
+  .loader {
+      border: var(--loader-border-width) solid transparent;
+      border-top: var(--loader-border-width) solid var(--loader-color);
+      border-radius: 50%;
+      width: var(--loader-size);
+      height: var(--loader-size);
+      animation: spin var(--animation-duration) linear infinite;
+  }
+
+  /* Spin animation keyframes */
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+`;
+
+// Append the styles to the head
+document.head.appendChild(style);
+
+// Hide preloader and enable scrolling once the page is fully loaded
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        preloader.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+});
+
+
+
 window.onload = function() {
     /**
      * Insert a div with custom content before or after the target element(s).
