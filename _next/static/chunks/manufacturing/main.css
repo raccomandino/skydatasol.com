@@ -11,9 +11,22 @@
     display: none !important;
 }
 .hero-video {
-    height: 100vh !important;
-    width: 100vw !important;
-}
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .hero-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
 .RatioImg__Wrapper-sc-xinq7a-1.kOipOR.ProjectHero__HeroImage-sc-1g1pu7g-4.dVwiyk {
     display: none !important;
 }
@@ -77,4 +90,24 @@ li#list-2 {
     background: #000;
     margin-bottom: -40px;
     padding: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    .t3 {
+        padding: 20px;
+    }
+    .hero-video {
+        height: 30vh !important;
+    }
+    .footer-text {
+        margin-top: 250px;
+    }
+  }
+
+  .ChyDg {
+	margin-top: 100px;
+}
+
+.fCZlYz {
+	display: none;
 }
