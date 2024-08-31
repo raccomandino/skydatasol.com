@@ -102,6 +102,9 @@ li#list-2 {
     .footer-text {
         margin-top: 300px;
     }
+    .list2-item-divg {
+        margin-bottom: 10px !important;
+    }
     
   .ChyDg {
 	margin-top: 150px;
@@ -114,4 +117,13 @@ li#list-2 {
 .kFuzPJ {
     border-bottom: none;
     padding-bottom: 20px;
+}
+.hrzNcA {
+    display: none;
+}
+p#list-1 {
+    display: none;
+}
+.list2-item-divg {
+    margin-bottom: -200px;
 }
