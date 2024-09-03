@@ -108,7 +108,7 @@ window.onload = function() {
     setIdBasedOnText('ul.UnstyledList-sc-nh8fku-0.bmWmtJ li', 'Join the SkyDataSol Family', 'a7');
 
     // Example for any other elements, such as paragraphs,headings, or divs
-    setIdBasedOnText('p', 'Why Choose SkyDataSol?', 'list-1');
+    setIdBasedOnText('p', 'Welcome to SkyDataSol Ltd.', 'hero-text');
     setIdBasedOnText('li', 'Available Products:', 'list-2');
     setIdBasedOnText('h1', 'Some heading text to match', 'custom-heading-id');
     setIdBasedOnText('div', 'Some div text to match', 'custom-div-id');
@@ -145,9 +145,9 @@ window.onload = function() {
     // Usage examples:
     // Insert a div with content before all paragraphs with class 'example-class'
 
-        insertDiv('section.ProjectHero__ProjectHeroSection-sc-1g1pu7g-0.ehifeV', 
-        '<video class="hero-video" autoplay="" muted="" loop="" playsinline="" src="http://skydatasol.com/video/2B9ad786-47Da-4593-8F37-C0e548e8c2ba-1.m4v" style="width: 100vw; height: 100vh; object-fit: cover; position: absolute; top: 0px; left: 0px;">Your browser does not support the video tag.</video>', 
-        'before', 
+        insertDiv('.PageContactVertical__FormLayout-sc-1ecz74v-1.QUsuG', 
+        '<form name="contact" method="POST" data-netlify="true" style="padding-bottom: 20px;"><input type="hidden" name="form-name" value="contact"><p><label for="name">Name:</label><input type="text" id="name" name="name" required></p><p><label for="email">Email:</label><input type="email" id="email" name="email" required></p><p><label for="message">Message:</label><textarea id="message" name="message" rows="5" required></textarea></p><p><button type="submit">Send</button></p></form>', 
+        'after', 
         'hero-video');
 
         insertDiv('.ContentNotes__CopyBlock-sc-xslbpm-3.aApgm', 
