@@ -145,14 +145,14 @@ window.onload = function() {
     // Usage examples:
     // Insert a div with content before all paragraphs with class 'example-class'
 
-        insertDiv('.PageContactVertical__FormLayout-sc-1ecz74v-1.QUsuG', 
-        '<form name="contact" method="POST" data-netlify="true" style="padding-bottom: 20px;"><input type="hidden" name="form-name" value="contact"><p><label for="name">Name:</label><input type="text" id="name" name="name" required></p><p><label for="email">Email:</label><input type="email" id="email" name="email" required></p><p><label for="message">Message:</label><textarea id="message" name="message" rows="5" required></textarea></p><p><button type="submit">Send</button></p></form>', 
+        insertDiv('a.ContactIntro__Email-sc-1g30jf2-2.hqOcNL', 
+        '<p><a href="mailto:franchising@skydatasol.com" style="text-decoration:underline;">franchising@skydatasol.com</a></p>', 
         'after', 
         'hero-video');
 
-        insertDiv('.ContentNotes__CopyBlock-sc-xslbpm-3.aApgm', 
-        '<h2 style="padding-bottom:20px;">Welcome to SkyDataSol Corporation</h2>', 
-        'before', 
+        insertDiv('h1.H__H1-sc-1vu6f0u-0.ContactIntro__Heading-sc-1g30jf2-1.Tcylg.cENTLF', 
+        '<p style="padding-bottom:20px;">Get in Touch with SkyDataSol, contact us from the emails below.</p>', 
+        'after', 
         't1');
 
     // Insert a div with content after an element with ID 'example-id'
