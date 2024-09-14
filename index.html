@@ -90,6 +90,31 @@
     i.fa {
       font-size: 40px;
     }
+
+    @media (max-width: 1400px) {
+.main-nav .flex-order-container .utility__container {
+	width: auto !important;
+	padding: 20px !important;
+}
+}
+
+@media (max-width: 768px) {
+  .main-vid-field {
+	position: relative;
+	overflow: hidden;
+	height: 293px;
+}
+
+.main-vid-field video {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+}
+
   </style>
 
 </head>
@@ -241,7 +266,7 @@
                               <article style="" class="media media-video view-mode-homepage-hero type--image">
 
                                 <div
-                                  class="field field--name-field-image field--type-image field--label-hidden field__item">
+                                  class="main-vid-field field field--name-field-image field--type-image field--label-hidden field__item">
                                   <video autoplay loop playsinline muted src="/sites/default/images/hero.mp4"
                                     width="100%" height="auto" alt="Almoosa Rehab Hospital" />
 
