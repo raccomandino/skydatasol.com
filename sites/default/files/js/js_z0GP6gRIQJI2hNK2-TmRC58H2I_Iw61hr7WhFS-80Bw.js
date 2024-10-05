@@ -1,2 +1,0 @@
-/* @license GNU-GPL-2.0-or-later https://www.drupal.org/licensing/faq */
-(function($){'use strict';$(document).ready(function(){var slider=$('.field--name-field-hero-slide');slider.slick({dots:true,infinite:true,autoplay:true,speed:300,autoplaySpeed:5000,slidesToShow:1,slidesToScroll:1,appendDots:'.slick-controls'});$('.autoplay').on('click touch',function(){if($(this).hasClass('pause')){slider.slick('slickPlay');$(this).toggleClass('pause');}else{slider.slick('slickPause');$(this).toggleClass('pause');}});});})(jQuery);;
